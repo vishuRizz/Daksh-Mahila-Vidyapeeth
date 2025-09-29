@@ -9,12 +9,14 @@ import VisionMission from "@/components/VisionMission";
 import Programs from "@/components/Programs";
 import Footer from "@/components/Footer";
 import React from "react";
+import Hero from "@/components/Hero";
 
 const DakshVidyapeeth: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <Hero />
       <AboutTrust />
       <AboutCollege />
       <PrincipalMessage />
