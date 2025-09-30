@@ -110,51 +110,8 @@ const VisionMission: React.FC = () => {
           </div>
         </div>
 
-        {/* Objectives */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Objectives</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {objectives.map((obj, index) => (
-              <div key={index} className="bg-gray-50 hover:bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
-                <div className="bg-blue-100 p-3 rounded-lg w-fit mb-4 text-blue-600">
-                  {obj.icon}
-                </div>
-                <h4 className="font-bold text-gray-900 mb-3">{obj.title}</h4>
-                <p className="text-gray-600 text-sm leading-relaxed">{obj.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Core Values */}
-        <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-3xl p-8 lg:p-12">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Core Values</h3>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              The fundamental principles that guide everything we do at Daksh Vidyapeeth
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {values.map((value, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center space-x-3">
-                <div className="w-3 h-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex-shrink-0"></div>
-                <span className="font-semibold text-gray-800">{value}</span>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <div className="bg-white rounded-2xl p-8 max-w-3xl mx-auto shadow-lg">
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">Our Promise</h4>
-              <p className="text-gray-700 leading-relaxed">
-                At Daksh Vidyapeeth, we promise to nurture each student with care, dedication, and expertise. 
-                We are committed to providing an environment where future educators can flourish, innovate, 
-                and develop the skills necessary to make a lasting impact on society.
-              </p>
-            </div>
-          </div>
-        </div>
+  
       </div>
     </section>
   )

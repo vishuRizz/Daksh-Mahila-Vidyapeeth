@@ -247,23 +247,7 @@ const Programs: React.FC = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-8 lg:p-12 text-center text-white">
-          <h3 className="text-3xl font-bold mb-4">Ready to Start Your Teaching Journey?</h3>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Join Daksh Vidyapeeth and become part of a community dedicated to shaping the future through quality education.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center space-x-2">
-              <Calendar className="h-5 w-5" />
-              <span>Book Campus Visit</span>
-            </button>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-all duration-300 flex items-center justify-center space-x-2">
-              <FileText className="h-5 w-5" />
-              <span>Download Prospectus</span>
-            </button>
-          </div>
-        </div>
+      
       </div>
     </section>
   )
