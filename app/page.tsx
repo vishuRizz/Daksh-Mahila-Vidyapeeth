@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutTrust from "@/components/AboutTrust";
 import AboutCollege from "@/components/AboutCollege";
-import PrincipalMessage from "@/components/PrincipalMessage";
 import VisionMission from "@/components/VisionMission";
 import Programs from "@/components/Programs";
 import Footer from "@/components/Footer";
@@ -19,7 +18,6 @@ const DakshMahilaVidyapeeth: React.FC = () => {
       <Hero />
       <AboutTrust />
       <AboutCollege />
-      <PrincipalMessage />
       <VisionMission />
       <Programs />
       <Footer />

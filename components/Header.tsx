@@ -78,7 +78,7 @@ const Header: React.FC = () => {
         },
       ],
     },
-    { label: "Principal", href: "#principals-message", dropdown: null },
+    { label: "Principal", href: "/principals-message", dropdown: null },
     {
       label: "Vision",
       href: "#vision-mission",
