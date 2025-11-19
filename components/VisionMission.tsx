@@ -65,9 +65,8 @@ const VisionMission: React.FC = () => {
               </div>
               
               <p className="text-lg leading-relaxed mb-6">
-                To be a leading institution in teacher education, recognized nationally for excellence 
-                in developing competent, ethical, and innovative educators who contribute to societal 
-                transformation and sustainable development.
+                Our vision is to create an inclusive learning environment that nurtures knowledge, discipline, and 
+                values, empowering students to become responsible citizens and future leaders.
               </p>
               
               <div className="bg-white/20 rounded-2xl p-6">
@@ -94,9 +93,9 @@ const VisionMission: React.FC = () => {
               </div>
               
               <p className="text-lg leading-relaxed mb-6">
-                To provide quality teacher education through innovative pedagogy, comprehensive 
-                practical training, character building, and holistic development, preparing 
-                educators who inspire and empower future generations.
+                Our mission is to provide quality education through innovative teaching, skill development, and 
+                holistic growth, ensuring that every student—whether pursuing higher education or professional 
+                teacher training—achieves academic excellence, personal growth, and contributes meaningfully to society.
               </p>
               
               <div className="bg-white/20 rounded-2xl p-6">

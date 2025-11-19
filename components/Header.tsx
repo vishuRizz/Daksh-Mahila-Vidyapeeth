@@ -259,12 +259,12 @@ const Header: React.FC = () => {
               <div className="flex items-center space-x-4 sm:space-x-6">
                 <span className="flex items-center space-x-2">
                   <Phone className="h-3 w-3" />
-                  <span className="hidden sm:inline">+91 123-456-7890</span>
+                  <span className="hidden sm:inline">9720213637</span>
                   <span className="sm:hidden">Call Us</span>
                 </span>
                 <span className="hidden md:flex items-center space-x-2">
                   <MessageSquare className="h-3 w-3" />
-                  <span>info@dakshvidyapeeth.edu</span>
+                  <span>dmv.edu@gmail.com</span>
                 </span>
               </div>
               <div className="flex items-center space-x-3 sm:space-x-4 text-[10px] sm:text-xs">
@@ -310,10 +310,10 @@ const Header: React.FC = () => {
                 </div>
                 <div className="min-w-0">
                   <h1 className="text-lg sm:text-2xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors tracking-tight whitespace-nowrap">
-                    Daksh Vidyapeeth
+                    Daksh Mahila Vidyapeeth
                   </h1>
                   <p className="text-[10px] sm:text-xs text-gray-500 font-medium tracking-wide mt-0.5 whitespace-nowrap">
-                    NCTE RECOGNIZED • EXCELLENCE
+                    CCS UNIVERSITY • EXCELLENCE
                   </p>
                 </div>
               </a>

@@ -17,96 +17,70 @@ const Programs: React.FC = () => {
   const programFeatures = [
     {
       icon: <Clock className="h-6 w-6" />,
-      title: "2 Years Duration",
-      description: "Comprehensive 4-semester program"
+      title: "3 Years Duration",
+      description: "Comprehensive 6-semester program"
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "100 Seats",
-      description: "Limited intake for quality education"
+      title: "400 Total Seats",
+      description: "B.A. (280) + B.Com (120) seats"
     },
     {
       icon: <Award className="h-6 w-6" />,
-      title: "NCTE Approved",
-      description: "Nationally recognized certification"
+      title: "CCS University",
+      description: "Affiliated to Chaudhary Charan Singh University"
     },
     {
       icon: <BookOpen className="h-6 w-6" />,
-      title: "Practical Training",
-      description: "Extensive field experience included"
+      title: "Quality Education",
+      description: "Innovative teaching and skill development"
     }
   ]
 
-  const curriculum = [
+  const programs = [
     {
-      semester: "Semester 1",
-      subjects: [
-        "Childhood and Growing Up",
-        "Contemporary India and Education", 
-        "Language I (Hindi/English)",
-        "Pedagogy of Environmental Studies"
-      ]
+      name: "Bachelor of Arts (B.A.)",
+      seats: 280,
+      description: "A comprehensive 3-year program offering diverse subjects in arts, humanities, and social sciences. Designed to prepare students for higher education and professional careers."
     },
     {
-      semester: "Semester 2", 
-      subjects: [
-        "Learning and Teaching",
-        "Assessment for Learning",
-        "Language I (Hindi/English)",
-        "Pedagogy of Mathematics"
-      ]
-    },
-    {
-      semester: "Semester 3",
-      subjects: [
-        "Inclusive Education",
-        "Educational Technology",
-        "Language II",
-        "Health, Yoga & Physical Education"
-      ]
-    },
-    {
-      semester: "Semester 4",
-      subjects: [
-        "School Management",
-        "Art & Craft Education",
-        "School Internship",
-        "Work Experience/Pre-Vocational Education"
-      ]
+      name: "Bachelor of Commerce (B.Com)",
+      seats: 120,
+      description: "A 3-year program focusing on commerce, business, and economics. Equips students with practical knowledge and skills for careers in business and finance."
     }
   ]
 
   const eligibility = [
-    "Passed Senior Secondary (10+2) with at least 50% marks",
-    "Passed Senior Secondary with at least 45% marks (for SC/ST/OBC)",
-    "Should have studied and passed in subjects relevant to elementary education",
-    "Age limit: 17-35 years at the time of admission"
+    "Passed Senior Secondary (10+2) or equivalent examination",
+    "Minimum 45% marks in aggregate (relaxation for reserved categories as per university norms)",
+    "Subject-specific requirements as per university guidelines",
+    "Admission through university admission process"
   ]
 
   const careerOpportunities = [
     {
-      title: "Primary School Teacher",
-      description: "Teach in government and private primary schools (Classes I-VIII)"
+      title: "Higher Education",
+      description: "Pursue M.A., M.Com, M.Ed., and other postgraduate degrees"
     },
     {
-      title: "Educational Coordinator",
-      description: "Work with NGOs and educational organizations"
+      title: "Teaching Career",
+      description: "Prepare for B.Ed. and become a teacher"
     },
     {
-      title: "Curriculum Developer", 
-      description: "Design educational content and teaching materials"
+      title: "Government Jobs", 
+      description: "Eligible for various government examinations and positions"
     },
     {
-      title: "Private Tutor",
-      description: "Provide personalized education services"
+      title: "Private Sector",
+      description: "Career opportunities in business, finance, and administration"
     },
     {
-      title: "Educational Consultant",
-      description: "Advise on educational policies and practices"
+      title: "Entrepreneurship",
+      description: "Start your own business or venture"
     },
     {
       title: "Further Studies",
-      description: "Pursue B.Ed, M.Ed, and other advanced degrees"
+      description: "Pursue professional courses and certifications"
     }
   ]
 
@@ -132,21 +106,21 @@ const Programs: React.FC = () => {
                   <GraduationCap className="h-8 w-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-blue-900">D.El.Ed Program</h3>
-                  <p className="text-blue-700 font-semibold">Diploma in Elementary Education</p>
+                  <h3 className="text-3xl font-bold text-blue-900">B.A. & B.Com Programs</h3>
+                  <p className="text-blue-700 font-semibold">Bachelor of Arts & Bachelor of Commerce</p>
                 </div>
               </div>
               
               <p className="text-gray-700 leading-relaxed mb-6">
-                Our Diploma in Elementary Education is a comprehensive 2-year program designed to prepare 
-                skilled teachers for elementary education (Classes I-VIII). The program combines theoretical 
-                knowledge with extensive practical training to ensure graduates are ready for the classroom.
+                Our B.A. and B.Com programs are designed to prepare students for higher education and professional 
+                careers. Approved by Chaudhary Charan Singh University, Meerut, these programs combine theoretical 
+                knowledge with practical skills to ensure graduates are ready for the professional world.
               </p>
               
               <p className="text-gray-700 leading-relaxed mb-8">
-                Recognized by NCTE and affiliated with the State Council of Educational Research and Training, 
-                our program meets all national standards for teacher education and provides excellent career 
-                opportunities in the education sector.
+                With 280 seats for B.A. and 120 seats for B.Com, we provide quality education through innovative 
+                teaching, skill development, and holistic growth, ensuring that every student achieves academic 
+                excellence and personal growth.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -175,26 +149,24 @@ const Programs: React.FC = () => {
           </div>
         </div>
 
-        {/* Curriculum */}
+        {/* Programs Details */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Curriculum Structure</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {curriculum.map((sem, index) => (
-              <div key={index} className="bg-gray-50 hover:bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
-                    {index + 1}
+          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Program Details</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            {programs.map((program, index) => (
+              <div key={index} className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="text-2xl font-bold text-blue-900">{program.name}</h4>
+                  <div className="bg-blue-600 text-white px-4 py-2 rounded-lg">
+                    <span className="font-bold">{program.seats}</span>
+                    <span className="text-sm ml-1">Seats</span>
                   </div>
-                  <h4 className="font-bold text-gray-900">{sem.semester}</h4>
                 </div>
-                <ul className="space-y-2">
-                  {sem.subjects.map((subject, idx) => (
-                    <li key={idx} className="text-gray-600 text-sm flex items-start space-x-2">
-                      <CheckCircle className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span>{subject}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-gray-700 leading-relaxed mb-6">{program.description}</p>
+                <div className="flex items-center space-x-2 text-blue-700 font-semibold">
+                  <CheckCircle className="h-5 w-5" />
+                  <span>Affiliated to CCS University, Meerut</span>
+                </div>
               </div>
             ))}
           </div>

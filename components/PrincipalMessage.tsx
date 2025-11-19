@@ -66,11 +66,11 @@ const PrincipalMessage: React.FC = () => {
                 </p>
                 
                 <p>
-                  It brings me immense pleasure to welcome you to Daksh Vidyapeeth, where we are committed to nurturing the next generation of educators who will shape the future of our nation. As the Principal of this esteemed institution, I am proud to lead a community dedicated to excellence in teacher education.
+                  We believe that education is a transformative journey—where students gain confidence, develop skills, and adopt values that enable them to contribute meaningfully to society. At Daksh Mahila Vidyapeeth, we strive to create a nurturing, disciplined, and inspiring environment where every student realizes their potential and steps forward as a responsible, compassionate, and confident educator.
                 </p>
                 
                 <p>
-                  At Daksh Vidyapeeth, we believe that teaching is not just a profession—it is a calling, a noble pursuit that requires dedication, compassion, and continuous learning. Our mission is to prepare competent, confident, and caring teachers who can inspire young minds and contribute meaningfully to society.
+                  Here, we don't just prepare teachers—we shape mentors, leaders, and changemakers for tomorrow.
                 </p>
                 
                 <p>
@@ -78,7 +78,7 @@ const PrincipalMessage: React.FC = () => {
                 </p>
                 
                 <p>
-                  The faculty at Daksh Vidyapeeth comprises experienced educators and industry experts who are passionate about mentoring the next generation. Our state-of-the-art facilities, comprehensive library, and technology-enabled classrooms provide an environment conducive to learning and growth.
+                  At Daksh Mahila Vidyapeeth, we are committed to providing quality education through innovative teaching, skill development, and holistic growth, ensuring that every student achieves academic excellence and personal growth.
                 </p>
                 
                 <p>
@@ -87,13 +87,13 @@ const PrincipalMessage: React.FC = () => {
 
                 <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-600 my-6">
                   <p className="font-medium text-sky-900 text-center italic text-sm">
-                    "Education is the most powerful weapon which you can use to change the world. At Daksh Vidyapeeth, we are committed to empowering you with this weapon."
+                    "Education is the most powerful weapon which you can use to change the world. At Daksh Mahila Vidyapeeth, we are committed to empowering you with this weapon."
                   </p>
                 </div>
 
                 <div className="text-right pt-4 border-t border-gray-100">
                   <p className="font-bold text-gray-900 text-sm">Dr. [Principal Name]</p>
-                  <p className="text-sky-600 text-xs">Principal, Daksh Vidyapeeth</p>
+                  <p className="text-sky-600 text-xs">Principal, Daksh Mahila Vidyapeeth</p>
                 </div>
               </div>
             </div>
@@ -108,7 +108,7 @@ const PrincipalMessage: React.FC = () => {
                   <h4 className="text-base font-bold text-gray-900">Our Vision</h4>
                 </div>
                 <p className="text-gray-600 text-xs leading-relaxed">
-                  To be a leading institution in teacher education, recognized for excellence in developing competent, ethical, and innovative educators who contribute to societal transformation.
+                  Our vision is to create an inclusive learning environment that nurtures knowledge, discipline, and values, empowering students to become responsible citizens and future leaders.
                 </p>
               </div>
 
@@ -120,7 +120,7 @@ const PrincipalMessage: React.FC = () => {
                   <h4 className="text-base font-bold text-gray-900">Our Mission</h4>
                 </div>
                 <p className="text-gray-600 text-xs leading-relaxed">
-                  To provide quality teacher education through innovative pedagogy, character building, and holistic development, preparing educators who inspire and empower future generations.
+                  Our mission is to provide quality education through innovative teaching, skill development, and holistic growth, ensuring that every student—whether pursuing higher education or professional teacher training—achieves academic excellence, personal growth, and contributes meaningfully to society.
                 </p>
               </div>
             </div>

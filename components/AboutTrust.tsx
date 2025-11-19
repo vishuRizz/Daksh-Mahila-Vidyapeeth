@@ -21,11 +21,11 @@ const AboutUs: React.FC = () => {
           <div className="text-center">
             <div className="inline-block mb-4">
               <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-1.5 text-xs font-medium border border-white/20">
-                College Code: UP260019 | NCTE Approved
+                Affiliated to: Chaudhary Charan Singh University, Meerut
               </div>
             </div>
             <h1 className="text-3xl lg:text-4xl font-bold mb-3">
-              About Daksh Vidyapeeth
+              About Daksh Mahila Vidyapeeth
             </h1>
             <p className="text-base text-sky-50 max-w-2xl mx-auto">
               Shaping Tomorrow's Educators, Today
@@ -41,7 +41,7 @@ const AboutUs: React.FC = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 bg-sky-50 text-sky-700 px-3 py-1.5 rounded-md text-xs font-semibold">
                 <Sparkles className="w-3 h-3" />
-                <span>Established 2018</span>
+                <span>Established 2015</span>
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
                 Building a Legacy of Educational Excellence
@@ -49,20 +49,20 @@ const AboutUs: React.FC = () => {
               <div className="w-16 h-1 bg-sky-600 rounded"></div>
               <div className="space-y-3">
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  Since its establishment in 2018, <span className="font-semibold text-gray-900">Daksh Vidyapeeth</span> has been dedicated to preparing future educators with the right blend of knowledge, values, and purpose. Recognized by NCTE, New Delhi, our D.El.Ed. program is thoughtfully designed to not only equip students with teaching skills but also to inspire them as torchbearers of learning for generations ahead.
+                  Since its inception in 2015, <span className="font-semibold text-gray-900">Daksh Mahila Vidyapeeth</span> has been committed to shaping future educators with knowledge, values, and purpose. Approved by Chaudhary Charan Singh University, Meerut, our B.A. and B.Com programs are designed not only to prepare teachers, but also to inspire torchbearers of learning who will guide future generations.
                 </p>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  As a co-educational institution, we believe education is a journey of transformation—where students gain confidence, develop professional competence, and embrace values that empower them to contribute meaningfully to society. At Daksh Vidyapeeth, we provide a nurturing, disciplined, and motivating environment where every learner discovers their true potential and emerges as a responsible, compassionate, and confident educator.
+                  We believe that education is a transformative journey—where students gain confidence, develop skills, and adopt values that enable them to contribute meaningfully to society. At Daksh Mahila Vidyapeeth, we strive to create a nurturing, disciplined, and inspiring environment where every student realizes their potential and steps forward as a responsible, compassionate, and confident educator.
                 </p>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: Award, label: "NCTE", value: "Approved" },
-                { icon: GraduationCap, label: "100", value: "D.El.Ed Seats" },
-                { icon: Users, label: "Co-Ed", value: "Institution" },
-                { icon: BookOpen, label: "2018", value: "Established" }
+                { icon: Award, label: "CCS", value: "University" },
+                { icon: GraduationCap, label: "280", value: "B.A. Seats" },
+                { icon: Users, label: "120", value: "B.Com Seats" },
+                { icon: BookOpen, label: "2015", value: "Established" }
               ].map((item, index) => (
                 <div
                   key={index}

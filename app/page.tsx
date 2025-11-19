@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 import React from "react";
 import Hero from "@/components/Hero";
 
-const DakshVidyapeeth: React.FC = () => {
+const DakshMahilaVidyapeeth: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -27,4 +27,4 @@ const DakshVidyapeeth: React.FC = () => {
   );
 };
 
-export default DakshVidyapeeth;
+export default DakshMahilaVidyapeeth;

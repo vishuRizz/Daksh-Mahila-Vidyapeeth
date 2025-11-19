@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="/hero.jpg" 
-                alt="Daksh Vidyapeeth Building" 
+                alt="Daksh Mahila Vidyapeeth Building" 
                 className="w-full h-auto object-cover"
               />  
             </div>
@@ -23,13 +23,13 @@ const HeroSection: React.FC = () => {
             <div>
               <p className="text-gray-700 text-base mb-1">Welcome to</p>
               <h1 className="text-3xl lg:text-4xl font-bold text-sky-600 mb-1">
-                Daksh Vidyapeeth
+                Daksh Mahila Vidyapeeth
               </h1>
-              <p className="text-sky-700 font-semibold text-sm">College Code: UP260019</p>
+              <p className="text-sky-700 font-semibold text-sm">Affiliated to: Chaudhary Charan Singh University, Meerut</p>
             </div>
 
             <p className="text-gray-700 text-base leading-relaxed text-justify">
-              Since its establishment in 2018, Daksh Vidyapeeth has been dedicated to preparing future educators with the right blend of knowledge, values, and purpose. Recognized by NCTE, New Delhi, our D.El.Ed. program is thoughtfully designed to not only equip students with teaching skills but also to inspire them as torchbearers of learning for generations ahead. As a co-educational institution, we believe education is a journey of transformation—where students gain confidence, develop professional competence, and embrace values that empower them to contribute meaningfully to society.
+              Since its inception in 2015, Daksh Mahila Vidyapeeth has been committed to shaping future educators with knowledge, values, and purpose. Approved by Chaudhary Charan Singh University, Meerut, our B.A. and B.Com programs are designed not only to prepare teachers, but also to inspire torchbearers of learning who will guide future generations.
             </p>
 
             <button className="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-6 py-2.5 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
@@ -46,34 +46,34 @@ const HeroSection: React.FC = () => {
               <div className="flex justify-center mb-3">
                 <Award className="w-12 h-12 text-sky-600" strokeWidth={1.5} />
               </div>
-              <h3 className="text-2xl font-bold text-sky-600 mb-1">NCTE</h3>
-              <p className="text-amber-400 text-sm font-semibold">Approved</p>
+              <h3 className="text-2xl font-bold text-sky-600 mb-1">CCS</h3>
+              <p className="text-amber-400 text-sm font-semibold">University</p>
             </div>
 
-            {/* D.El.Ed Program Card */}
+            {/* B.A. Program Card */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 text-center">
               <div className="flex justify-center mb-3">
                 <GraduationCap className="w-12 h-12 text-sky-600" strokeWidth={1.5} />
               </div>
-              <h3 className="text-2xl font-bold text-sky-600 mb-1">D.El.Ed</h3>
-              <p className="text-amber-400 text-sm font-semibold">Program</p>
+              <h3 className="text-2xl font-bold text-sky-600 mb-1">B.A.</h3>
+              <p className="text-amber-400 text-sm font-semibold">280 Seats</p>
             </div>
 
-            {/* Seats Card */}
+            {/* B.Com Program Card */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 text-center">
               <div className="flex justify-center mb-3">
                 <Users className="w-12 h-12 text-sky-600" strokeWidth={1.5} />
               </div>
-              <h3 className="text-2xl font-bold text-sky-600 mb-1">100</h3>
-              <p className="text-amber-400 text-sm font-semibold">Seats</p>
+              <h3 className="text-2xl font-bold text-sky-600 mb-1">B.Com</h3>
+              <p className="text-amber-400 text-sm font-semibold">120 Seats</p>
             </div>
 
-            {/* Since 2018 Card */}
+            {/* Since 2015 Card */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 text-center">
               <div className="flex justify-center mb-3">
                 <BookOpen className="w-12 h-12 text-sky-600" strokeWidth={1.5} />
               </div>
-              <h3 className="text-2xl font-bold text-sky-600 mb-1">2018</h3>
+              <h3 className="text-2xl font-bold text-sky-600 mb-1">2015</h3>
               <p className="text-amber-400 text-sm font-semibold">Established</p>
             </div>
           </div>

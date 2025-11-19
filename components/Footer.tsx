@@ -25,27 +25,27 @@ const Footer: React.FC = () => {
   ]
 
   const programs = [
-    'D.El.Ed (100 Seats)',
-    'Teacher Training',
-    'Professional Development',
-    'Continuing Education'
+    'B.A. (280 Seats)',
+    'B.Com (120 Seats)',
+    'Higher Education',
+    'Professional Development'
   ]
 
   const contactInfo = [
     {
       icon: <MapPin className="h-5 w-5" />,
       title: "Address",
-      details: "Daksh Vidyapeeth, Educational District, Greater Noida, Uttar Pradesh - 201310"
+      details: "Chandouk Dauraha, Jahangirabad, Bulandshahr, Uttar Pradesh, India"
     },
     {
       icon: <Phone className="h-5 w-5" />,
       title: "Phone",
-      details: "+91-120-XXXXXXX"
+      details: "9720213637"
     },
     {
       icon: <Mail className="h-5 w-5" />,
       title: "Email",
-      details: "info@dakshvidyapeeth.edu.in"
+      details: "dmv.edu@gmail.com"
     },
     {
       icon: <Clock className="h-5 w-5" />,
@@ -66,8 +66,8 @@ const Footer: React.FC = () => {
                 <GraduationCap className="h-8 w-8 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Daksh Vidyapeeth</h3>
-                <p className="text-gray-400 text-sm">College Code: UP260019</p>
+                <h3 className="text-xl font-bold text-white">Daksh Mahila Vidyapeeth</h3>
+                <p className="text-gray-400 text-sm">Affiliated to: Chaudhary Charan Singh University, Meerut</p>
               </div>
             </div>
             
@@ -77,17 +77,8 @@ const Footer: React.FC = () => {
             </p>
             
             <div className="flex space-x-4">
-              <a href="#" className="bg-blue-600 hover:bg-blue-700 p-2 rounded-lg transition-colors duration-300">
+              <a href="https://www.facebook.com/dakshmahila.vidyapeeth/" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 p-2 rounded-lg transition-colors duration-300">
                 <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-blue-400 hover:bg-blue-500 p-2 rounded-lg transition-colors duration-300">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-pink-600 hover:bg-pink-700 p-2 rounded-lg transition-colors duration-300">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-red-600 hover:bg-red-700 p-2 rounded-lg transition-colors duration-300">
-                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -125,7 +116,7 @@ const Footer: React.FC = () => {
             
             <div className="mt-8 bg-blue-600 p-4 rounded-lg">
               <h5 className="font-bold text-white mb-2">Admissions Open</h5>
-              <p className="text-blue-100 text-sm mb-3">Apply now for D.El.Ed Program 2024-26</p>
+              <p className="text-blue-100 text-sm mb-3">Apply now for B.A. and B.Com Programs</p>
               <button className="bg-white text-blue-600 px-4 py-2 rounded font-semibold text-sm hover:bg-gray-100 transition-colors duration-300">
                 Apply Now
               </button>
@@ -180,11 +171,11 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
               <p className="text-gray-400 text-sm">
-                © 2024 Daksh Vidyapeeth. All rights reserved. | 
-                <span className="text-blue-400"> Recognized by NCTE, New Delhi</span>
+                © 2024 Daksh Mahila Vidyapeeth. All rights reserved. | 
+                <span className="text-blue-400"> Affiliated to Chaudhary Charan Singh University, Meerut</span>
               </p>
               <p className="text-gray-500 text-xs mt-1">
-                Managed by Mahendra Singh Educational & Social Welfare Trust
+                Chandouk Dauraha, Jahangirabad, Bulandshahr, Uttar Pradesh, India
               </p>
             </div>
             
@@ -197,7 +188,7 @@ const Footer: React.FC = () => {
           
           <div className="text-center mt-4 pt-4 border-t border-gray-800">
             <p className="text-gray-500 text-xs">
-              Designed with ❤️ for Quality Education | College Code: UP260019
+              Designed with ❤️ for Quality Education | Affiliated to CCS University, Meerut
             </p>
           </div>
         </div>
