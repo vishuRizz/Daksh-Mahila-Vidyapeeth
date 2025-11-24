@@ -172,53 +172,6 @@ const Programs: React.FC = () => {
           </div>
         </div>
 
-        {/* Eligibility & Career */}
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Eligibility Criteria */}
-          <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-green-900 mb-6">Eligibility Criteria</h3>
-            <div className="space-y-4">
-              {eligibility.map((criteria, index) => (
-                <div key={index} className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">{criteria}</p>
-                </div>
-              ))}
-            </div>
-            
-            <div className="mt-8 bg-white p-6 rounded-xl">
-              <h4 className="font-bold text-gray-900 mb-3">Important Dates</h4>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Application Start:</span>
-                  <span className="font-semibold">March 2024</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Last Date:</span>
-                  <span className="font-semibold">June 2024</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Session Start:</span>
-                  <span className="font-semibold">July 2024</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Career Opportunities */}
-          <div className="bg-gradient-to-br from-purple-50 to-violet-100 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-purple-900 mb-6">Career Opportunities</h3>
-            <div className="space-y-4">
-              {careerOpportunities.map((career, index) => (
-                <div key={index} className="bg-white p-4 rounded-xl shadow-sm">
-                  <h4 className="font-bold text-gray-900 mb-2">{career.title}</h4>
-                  <p className="text-gray-600 text-sm">{career.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
       
       </div>
     </section>

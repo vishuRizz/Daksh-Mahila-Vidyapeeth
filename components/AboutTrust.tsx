@@ -81,7 +81,7 @@ const AboutUs: React.FC = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
@@ -119,10 +119,10 @@ const AboutUs: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-sky-600 to-sky-700 text-white">
+      {/* <section className="py-16 bg-gradient-to-r from-sky-600 to-sky-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl lg:text-3xl font-bold mb-3">
             Join Our Journey
@@ -139,7 +139,7 @@ const AboutUs: React.FC = () => {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
