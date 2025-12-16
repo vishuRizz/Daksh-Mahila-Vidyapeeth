@@ -51,29 +51,29 @@ const Header: React.FC = () => {
   }, [lastScrollY]);
 
   const navItems = [
-    { label: "Home", href: "#home", dropdown: null },
+    { label: "Home", href: "/", dropdown: null },
     {
       label: "About",
-      href: "#about",
+      href: "/about",
       dropdown: [
         {
           label: "About College",
-          href: "#about-college",
+          href: "/about#about-college",
           icon: <School className="h-4 w-4" />,
         },
         {
           label: "About Trust",
-          href: "#about-trust",
+          href: "/about#about-trust",
           icon: <Building className="h-4 w-4" />,
         },
         {
           label: "History",
-          href: "#history",
+          href: "/about#history",
           icon: <BookOpen className="h-4 w-4" />,
         },
         {
           label: "Leadership",
-          href: "#leadership",
+          href: "/about#leadership",
           icon: <Users className="h-4 w-4" />,
         },
       ],
@@ -81,162 +81,162 @@ const Header: React.FC = () => {
     { label: "Principal", href: "/principals-message", dropdown: null },
     {
       label: "Vision",
-      href: "#vision-mission",
+      href: "/vision",
       dropdown: [
-        { label: "Vision", href: "#vision", icon: <Eye className="h-4 w-4" /> },
+        { label: "Vision", href: "/vision#vision", icon: <Eye className="h-4 w-4" /> },
         {
           label: "Mission",
-          href: "#mission",
+          href: "/vision#mission",
           icon: <Target className="h-4 w-4" />,
         },
         {
           label: "Core Values",
-          href: "#values",
+          href: "/vision#values",
           icon: <Award className="h-4 w-4" />,
         },
         {
           label: "Objectives",
-          href: "#objectives",
+          href: "/vision#objectives",
           icon: <Target className="h-4 w-4" />,
         },
       ],
     },
     {
       label: "Programs",
-      href: "#programs",
+      href: "/programs",
       dropdown: [
         {
           label: "D.El.Ed Program",
-          href: "#deled-program",
+          href: "/programs#deled-program",
           icon: <BookOpen className="h-4 w-4" />,
         },
         {
           label: "Curriculum",
-          href: "#curriculum",
+          href: "/programs#curriculum",
           icon: <BookOpen className="h-4 w-4" />,
         },
         {
           label: "Eligibility",
-          href: "#eligibility",
+          href: "/programs#eligibility",
           icon: <Award className="h-4 w-4" />,
         },
         {
           label: "Admission Process",
-          href: "#admission",
+          href: "/programs#admission",
           icon: <Users className="h-4 w-4" />,
         },
         {
           label: "Fee Structure",
-          href: "#fees",
+          href: "/programs#fees",
           icon: <Award className="h-4 w-4" />,
         },
       ],
     },
     {
       label: "Infrastructure",
-      href: "#infrastructure",
+      href: "/infrastructure",
       dropdown: [
         {
           label: "Classrooms",
-          href: "#classrooms",
+          href: "/infrastructure#classrooms",
           icon: <School className="h-4 w-4" />,
         },
         {
           label: "Library",
-          href: "#library",
+          href: "/infrastructure#library",
           icon: <BookOpen className="h-4 w-4" />,
         },
         {
           label: "Laboratories",
-          href: "#labs",
+          href: "/infrastructure#labs",
           icon: <School className="h-4 w-4" />,
         },
         {
           label: "Sports Facilities",
-          href: "#sports",
+          href: "/infrastructure#sports",
           icon: <Award className="h-4 w-4" />,
         },
         {
           label: "Hostel",
-          href: "#hostel",
+          href: "/infrastructure#hostel",
           icon: <Building className="h-4 w-4" />,
         },
       ],
     },
     {
       label: "Placements",
-      href: "#placements",
+      href: "/placements",
       dropdown: [
         {
           label: "Placement Statistics",
-          href: "#placement-stats",
+          href: "/placements#placement-stats",
           icon: <Award className="h-4 w-4" />,
         },
         {
           label: "Recruiting Partners",
-          href: "#recruiters",
+          href: "/placements#recruiters",
           icon: <Building className="h-4 w-4" />,
         },
         {
           label: "Alumni Success",
-          href: "#alumni",
+          href: "/placements#alumni",
           icon: <Users className="h-4 w-4" />,
         },
         {
           label: "Career Guidance",
-          href: "#career-guidance",
+          href: "/placements#career-guidance",
           icon: <Target className="h-4 w-4" />,
         },
       ],
     },
     {
       label: "News",
-      href: "#news",
+      href: "/news",
       dropdown: [
         {
           label: "Latest News",
-          href: "#latest-news",
+          href: "/news#latest-news",
           icon: <Newspaper className="h-4 w-4" />,
         },
         {
           label: "Events",
-          href: "#events",
+          href: "/news#events",
           icon: <Award className="h-4 w-4" />,
         },
         {
           label: "Announcements",
-          href: "#announcements",
+          href: "/news#announcements",
           icon: <MessageSquare className="h-4 w-4" />,
         },
         {
           label: "Photo Gallery",
-          href: "#gallery",
+          href: "/news#gallery",
           icon: <BookOpen className="h-4 w-4" />,
         },
       ],
     },
     {
       label: "Contact",
-      href: "#contact",
+      href: "/contact",
       dropdown: [
         {
           label: "Contact Info",
-          href: "#contact-info",
+          href: "/contact#contact-info",
           icon: <Phone className="h-4 w-4" />,
         },
         {
           label: "Location",
-          href: "#location",
+          href: "/contact#location",
           icon: <Building className="h-4 w-4" />,
         },
         {
           label: "Quick Enquiry",
-          href: "#enquiry",
+          href: "/contact#enquiry",
           icon: <MessageSquare className="h-4 w-4" />,
         },
         {
           label: "Feedback",
-          href: "#feedback",
+          href: "/contact#feedback",
           icon: <MessageSquare className="h-4 w-4" />,
         },
       ],
@@ -299,7 +299,7 @@ const Header: React.FC = () => {
             <div className="flex justify-between items-center h-20 sm:h-24">
               {/* Logo Section - Far Left */}
               <a
-                href="#home"
+                href="/"
                 className="flex items-center space-x-3 group flex-shrink-0"
               >
                 <div className="relative">
@@ -349,30 +349,34 @@ const Header: React.FC = () => {
 
                       {item.dropdown && (
                         <div
-                          className={`absolute top-full left-0 mt-3 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden transition-all duration-300 ${
+                          className={`absolute top-full left-0 pt-2 w-64 transition-all duration-300 ${
                             activeDropdown === item.label
-                              ? "opacity-100 visible translate-y-0"
+                              ? "opacity-100 visible translate-y-0 pointer-events-auto"
                               : "opacity-0 invisible -translate-y-3 pointer-events-none"
                           }`}
+                          onMouseEnter={() => setActiveDropdown(item.label)}
+                          onMouseLeave={() => setActiveDropdown(null)}
                         >
-                          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-blue-700"></div>
-                          <div className="py-3">
-                            {item.dropdown.map(
-                              (dropdownItem, dropdownIndex) => (
-                                <a
-                                  key={dropdownIndex}
-                                  href={dropdownItem.href}
-                                  className="flex items-center space-x-3 px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 hover:text-blue-700 transition-all duration-200 group/item"
-                                >
-                                  <div className="text-blue-600 group-hover/item:scale-110 group-hover/item:text-blue-700 transition-all">
-                                    {dropdownItem.icon}
-                                  </div>
-                                  <span className="text-sm font-medium">
-                                    {dropdownItem.label}
-                                  </span>
-                                </a>
-                              )
-                            )}
+                          <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+                            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-blue-700"></div>
+                            <div className="py-3">
+                              {item.dropdown.map(
+                                (dropdownItem, dropdownIndex) => (
+                                  <a
+                                    key={dropdownIndex}
+                                    href={dropdownItem.href}
+                                    className="flex items-center space-x-3 px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 hover:text-blue-700 transition-all duration-200 group/item"
+                                  >
+                                    <div className="text-blue-600 group-hover/item:scale-110 group-hover/item:text-blue-700 transition-all">
+                                      {dropdownItem.icon}
+                                    </div>
+                                    <span className="text-sm font-medium">
+                                      {dropdownItem.label}
+                                    </span>
+                                  </a>
+                                )
+                              )}
+                            </div>
                           </div>
                         </div>
                       )}

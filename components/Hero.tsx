@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
           <div className="relative pb-32 lg:pb-24">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="/hero.jpg" 
+                src="/hero.jpeg" 
                 alt="Daksh Mahila Vidyapeeth Building" 
                 className="w-full h-auto object-cover"
               />  
@@ -32,9 +32,9 @@ const HeroSection: React.FC = () => {
               Since its inception in 2015, Daksh Mahila Vidyapeeth has been committed to shaping future educators with knowledge, values, and purpose. Approved by Chaudhary Charan Singh University, Meerut, our B.A. and B.Com programs are designed not only to prepare teachers, but also to inspire torchbearers of learning who will guide future generations.
             </p>
 
-            <button className="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-6 py-2.5 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+            {/* <button className="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-6 py-2.5 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
               Read More
-            </button>
+            </button> */}
           </div>
         </div>
 
