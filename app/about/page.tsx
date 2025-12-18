@@ -43,7 +43,7 @@ const AboutPage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Daksh Mahila Vidyapeeth, established in 2018, is a premier teacher education institution recognized by CCS University, New Delhi. 
+                Daksh Mahila Vidyapeeth, established in 2018, is a premier teacher education institution approved by S.C.E.R.ET. 
                 We are committed to preparing future educators with the right blend of knowledge, values, and purpose.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
@@ -67,7 +67,7 @@ const AboutPage: React.FC = () => {
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <Award className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">CCS University Recognized Institution</span>
+                  <span className="text-gray-700">Approved by S.C.E.R.ET.</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <GraduationCap className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
@@ -155,9 +155,9 @@ const AboutPage: React.FC = () => {
                   <div className="absolute left-6 top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
                   <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-600">
                     <div className="text-sm font-semibold text-blue-600 mb-2">2019</div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">CCS University Recognition</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">S.C.E.R.ET. Approval</h3>
                     <p className="text-gray-700">
-                      Received recognition from the National Council for Teacher Education (CCS University), New Delhi, 
+                      Received approval from the State Council of Educational Research and Training (S.C.E.R.ET.), Uttar Pradesh, 
                       validating our commitment to quality education.
                     </p>
                   </div>
@@ -189,18 +189,18 @@ const AboutPage: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                name: "Dr. [Name]",
-                position: "Principal",
+                name: "Mr. Kapil Chaudhary",
+                position: "Chairman",
                 description: "Leading the institution with vision and dedication to educational excellence.",
               },
               {
-                name: "Prof. [Name]",
-                position: "Vice Principal",
+                name: "Mr. Pradeep Chaudhary",
+                position: "Chairman",
                 description: "Overseeing academic programs and student development initiatives.",
               },
               {
-                name: "Mr. [Name]",
-                position: "Administrative Head",
+                name: "Ms. Ashu Chaudhary",
+                position: "Chief Operating Officer",
                 description: "Managing institutional operations and infrastructure development.",
               },
             ].map((leader, index) => (

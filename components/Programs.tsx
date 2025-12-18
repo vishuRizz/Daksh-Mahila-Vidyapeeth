@@ -27,8 +27,8 @@ const Programs: React.FC = () => {
     },
     {
       icon: <Award className="h-6 w-6" />,
-      title: "CCS University",
-      description: "Affiliated to Chaudhary Charan Singh University"
+      title: "Approved by S.C.E.R.ET.",
+      description: "State Council of Educational Research and Training"
     },
     {
       icon: <BookOpen className="h-6 w-6" />,

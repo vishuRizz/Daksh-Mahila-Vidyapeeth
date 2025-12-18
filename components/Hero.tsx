@@ -41,13 +41,13 @@ const HeroSection: React.FC = () => {
         {/* Stats Section - Overlapping */}
         <div className="-mt-16 lg:-mt-12 relative z-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w-6xl mx-auto">
-            {/* NCTE Approved Card */}
+            {/* S.C.E.R.ET. Approved Card */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 text-center">
               <div className="flex justify-center mb-3">
                 <Award className="w-12 h-12 text-sky-600" strokeWidth={1.5} />
               </div>
-              <h3 className="text-2xl font-bold text-sky-600 mb-1">CCS</h3>
-              <p className="text-amber-400 text-sm font-semibold">University</p>
+              <h3 className="text-2xl font-bold text-sky-600 mb-1">S.C.E.R.ET.</h3>
+              <p className="text-amber-400 text-sm font-semibold">Approved</p>
             </div>
 
             {/* B.A. Program Card */}

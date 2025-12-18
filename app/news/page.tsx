@@ -18,10 +18,10 @@ const NewsPage: React.FC = () => {
   const latestNews = [
     {
       id: 1,
-      title: "CCS University Recognition Successfully Maintained",
+      title: "S.C.E.R.ET. Approval Successfully Maintained",
       date: "March 15, 2024",
       excerpt:
-        "We are pleased to announce that our institution has successfully maintained the CCS University recognition for the academic year 2024-2025.",
+        "We are pleased to announce that our institution has successfully maintained the S.C.E.R.ET. approval for the academic year 2024-2025.",
       category: "Institutional",
     },
     {

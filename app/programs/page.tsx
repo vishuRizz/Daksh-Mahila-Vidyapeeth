@@ -66,7 +66,7 @@ const ProgramsPage: React.FC = () => {
                     <Award className="h-6 w-6 text-blue-600" />
                     <h3 className="font-bold text-gray-900">Recognition</h3>
                   </div>
-                  <p className="text-gray-600">CCS University Approved</p>
+                  <p className="text-gray-600">Approved by S.C.E.R.ET.</p>
                 </div>
                 <div className="bg-white rounded-lg p-6 shadow-md">
                   <div className="flex items-center space-x-3 mb-3">

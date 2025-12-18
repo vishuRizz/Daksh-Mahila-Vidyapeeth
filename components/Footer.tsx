@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       title: "Email",
-      details: "dmv.edu@gmail.com"
+      details: "dakshvidyapeeth@gmail.com"
     },
     {
       icon: <Clock className="h-5 w-5" />,

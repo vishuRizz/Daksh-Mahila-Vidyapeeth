@@ -19,7 +19,7 @@ const AboutCollege: React.FC = () => {
               Excellence in Teacher Education
             </h3>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Daksh Mahila Vidyapeeth is committed to shaping future educators with knowledge, values, and purpose. Approved by Chaudhary Charan Singh University, Meerut, our B.A. and B.Com programs are designed not only to prepare teachers, but also to inspire torchbearers of learning who will guide future generations.
+              Daksh Mahila Vidyapeeth is committed to shaping future educators with knowledge, values, and purpose. Approved by S.C.E.R.ET., our B.A. and B.Com programs are designed not only to prepare teachers, but also to inspire torchbearers of learning who will guide future generations.
             </p>
             <p className="text-gray-700 leading-relaxed">
               We believe that education is a transformative journey—where students gain confidence, develop skills, and adopt values that enable them to contribute meaningfully to society. At Daksh Mahila Vidyapeeth, we strive to create a nurturing, disciplined, and inspiring environment where every student realizes their potential.

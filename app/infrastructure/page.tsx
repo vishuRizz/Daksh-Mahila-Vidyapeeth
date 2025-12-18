@@ -122,7 +122,7 @@ const InfrastructurePage: React.FC = () => {
             <FlaskConical className="h-8 w-8 text-blue-600" />
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Laboratories</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {[
               {
                 name: "Science Lab",
@@ -133,11 +133,6 @@ const InfrastructurePage: React.FC = () => {
                 name: "Computer Lab",
                 description: "State-of-the-art computer laboratory with latest hardware and software",
                 features: ["30+ Computers", "High-speed internet", "Latest software"],
-              },
-              {
-                name: "Psychology Lab",
-                description: "Specialized laboratory for psychology experiments and assessments",
-                features: ["Testing materials", "Observation room", "Research tools"],
               },
             ].map((lab, index) => (
               <div key={index} className="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-6">
@@ -192,36 +187,6 @@ const InfrastructurePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Hostel Section */}
-      <section id="hostel" className="py-16 bg-white scroll-mt-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-[1920px]">
-          <div className="flex items-center space-x-3 mb-8">
-            <Building className="h-8 w-8 text-blue-600" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Hostel</h2>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8">
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Our hostel provides comfortable and secure accommodation for outstation students. The hostel 
-                facilities are designed to create a home-like environment while ensuring safety and discipline.
-              </p>
-              <div className="grid md:grid-cols-2 gap-6 mt-8">
-                {[
-                  { icon: <Users className="h-6 w-6" />, text: "Separate hostels for boys and girls" },
-                  { icon: <Wifi className="h-6 w-6" />, text: "Wi-Fi connectivity" },
-                  { icon: <Monitor className="h-6 w-6" />, text: "Study rooms and common areas" },
-                  { icon: <Building className="h-6 w-6" />, text: "24/7 security and supervision" },
-                ].map((facility, index) => (
-                  <div key={index} className="flex items-center space-x-4 bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-blue-600">{facility.icon}</div>
-                    <span className="text-gray-700">{facility.text}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>

@@ -24,13 +24,11 @@ const PrincipalMessage: React.FC = () => {
               
               <div className="text-center mb-4">
                 <h3 className="text-lg font-bold text-gray-900 mb-1">
-                  Dr. [Principal Name]
+                  Mr. Harveer Singh
                 </h3>
                 <p className="text-sky-600 font-semibold text-sm mb-2">Principal</p>
                 <p className="text-gray-600 text-xs">
-                  M.Ed., Ph.D. in Education
-                  <br />
-                  15+ Years in Educational Leadership
+                  M.Ed.
                 </p>
               </div>
 

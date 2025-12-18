@@ -264,7 +264,7 @@ const Header: React.FC = () => {
                 </span>
                 <span className="hidden md:flex items-center space-x-2">
                   <MessageSquare className="h-3 w-3" />
-                  <span>dmv.edu@gmail.com</span>
+                  <span>dakshvidyapeeth@gmail.com</span>
                 </span>
               </div>
               <div className="flex items-center space-x-3 sm:space-x-4 text-[10px] sm:text-xs">
@@ -313,7 +313,7 @@ const Header: React.FC = () => {
                     Daksh Mahila Vidyapeeth
                   </h1>
                   <p className="text-[10px] sm:text-xs text-gray-500 font-medium tracking-wide mt-0.5 whitespace-nowrap">
-                    CCS UNIVERSITY • EXCELLENCE
+                    APPROVED BY S.C.E.R.ET. • EXCELLENCE
                   </p>
                 </div>
               </a>
@@ -358,24 +358,24 @@ const Header: React.FC = () => {
                           onMouseLeave={() => setActiveDropdown(null)}
                         >
                           <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
-                            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-blue-700"></div>
-                            <div className="py-3">
-                              {item.dropdown.map(
-                                (dropdownItem, dropdownIndex) => (
-                                  <a
-                                    key={dropdownIndex}
-                                    href={dropdownItem.href}
-                                    className="flex items-center space-x-3 px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 hover:text-blue-700 transition-all duration-200 group/item"
-                                  >
-                                    <div className="text-blue-600 group-hover/item:scale-110 group-hover/item:text-blue-700 transition-all">
-                                      {dropdownItem.icon}
-                                    </div>
-                                    <span className="text-sm font-medium">
-                                      {dropdownItem.label}
-                                    </span>
-                                  </a>
-                                )
-                              )}
+                          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-blue-700"></div>
+                          <div className="py-3">
+                            {item.dropdown.map(
+                              (dropdownItem, dropdownIndex) => (
+                                <a
+                                  key={dropdownIndex}
+                                  href={dropdownItem.href}
+                                  className="flex items-center space-x-3 px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 hover:text-blue-700 transition-all duration-200 group/item"
+                                >
+                                  <div className="text-blue-600 group-hover/item:scale-110 group-hover/item:text-blue-700 transition-all">
+                                    {dropdownItem.icon}
+                                  </div>
+                                  <span className="text-sm font-medium">
+                                    {dropdownItem.label}
+                                  </span>
+                                </a>
+                              )
+                            )}
                             </div>
                           </div>
                         </div>
