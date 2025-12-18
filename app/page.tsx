@@ -7,6 +7,7 @@ import AboutCollege from "@/components/AboutCollege";
 import VisionMission from "@/components/VisionMission";
 import Programs from "@/components/Programs";
 import Footer from "@/components/Footer";
+import NewsAnnouncements from "@/components/NewsAnnouncements";
 import React from "react";
 import Hero from "@/components/Hero";
 
@@ -20,6 +21,7 @@ const DakshMahilaVidyapeeth: React.FC = () => {
       <AboutCollege />
       <VisionMission />
       <Programs />
+      <NewsAnnouncements />
       <Footer />
     </div>
   );

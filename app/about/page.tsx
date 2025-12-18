@@ -96,83 +96,19 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-xl shadow-lg p-8">
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Daksh Mahila Vidyapeeth is managed by a dedicated trust committed to providing quality education and fostering 
-                excellence in teacher training. Our trust believes in creating an environment where students can develop 
-                their full potential and become responsible educators.
-              </p>
-              <div className="grid md:grid-cols-3 gap-6 mt-8">
-                <div className="text-center">
-                  <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Heart className="h-8 w-8 text-blue-600" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-2">Commitment</h3>
-                  <p className="text-sm text-gray-600">Dedicated to educational excellence</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Target className="h-8 w-8 text-blue-600" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-2">Vision</h3>
-                  <p className="text-sm text-gray-600">Shaping future educators</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Award className="h-8 w-8 text-blue-600" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-2">Excellence</h3>
-                  <p className="text-sm text-gray-600">Maintaining high standards</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* History Section */}
-      <section id="history" className="py-16 bg-white scroll-mt-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-[1920px]">
-          <div className="flex items-center space-x-3 mb-8">
-            <BookOpen className="h-8 w-8 text-blue-600" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Our History</h2>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200"></div>
-              <div className="space-y-8">
-                <div className="relative pl-20">
-                  <div className="absolute left-6 top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
-                  <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-600">
-                    <div className="text-sm font-semibold text-blue-600 mb-2">2018</div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Institution Established</h3>
-                    <p className="text-gray-700">
-                      Daksh Mahila Vidyapeeth was founded with a vision to provide quality teacher education and prepare 
-                      educators who can make a positive impact on society.
-                    </p>
-                  </div>
-                </div>
-                <div className="relative pl-20">
-                  <div className="absolute left-6 top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
-                  <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-600">
-                    <div className="text-sm font-semibold text-blue-600 mb-2">2019</div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">S.C.E.R.ET. Approval</h3>
-                    <p className="text-gray-700">
-                      Received approval from the State Council of Educational Research and Training (S.C.E.R.ET.), Uttar Pradesh, 
-                      validating our commitment to quality education.
-                    </p>
-                  </div>
-                </div>
-                <div className="relative pl-20">
-                  <div className="absolute left-6 top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
-                  <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-600">
-                    <div className="text-sm font-semibold text-blue-600 mb-2">2020 - Present</div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Growth & Excellence</h3>
-                    <p className="text-gray-700">
-                      Continued expansion of infrastructure, faculty development, and student achievements, 
-                      establishing ourselves as a leading teacher education institution.
-                    </p>
-                  </div>
-                </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Daksh Mahila Vidyapeeth – Trust Details
+              </h3>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Daksh Mahila Vidyapeeth is also administered by the <span className="font-semibold text-gray-900">Mahendra Singh Educational and Social Welfare Trust</span>, with a dedicated mission to empower women through education, skill development, and value-based learning.
+                </p>
+                <p>
+                  Recognizing education as a powerful tool for social transformation, the Trust places special emphasis on women's education to promote gender equity, self-reliance, and leadership. Daksh Mahila Vidyapeeth serves as a platform for academic excellence and personal development, enabling women students to achieve economic independence and social empowerment.
+                </p>
+                <p>
+                  The institution reflects the Trust's commitment to fostering confident, skilled, and socially responsible women who can actively participate in nation-building and community development.
+                </p>
               </div>
             </div>
           </div>
@@ -195,7 +131,7 @@ const AboutPage: React.FC = () => {
               },
               {
                 name: "Mr. Pradeep Chaudhary",
-                position: "Chairman",
+                position: "Secretary",
                 description: "Overseeing academic programs and student development initiatives.",
               },
               {

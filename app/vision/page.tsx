@@ -6,12 +6,8 @@ import React from "react";
 import {
   Eye,
   Target,
-  Award,
-  Heart,
   Lightbulb,
-  Shield,
   TrendingUp,
-  Users,
 } from "lucide-react";
 
 const VisionPage: React.FC = () => {
@@ -111,49 +107,6 @@ const VisionPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Core Values Section */}
-      <section id="values" className="py-16 bg-white scroll-mt-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-[1920px]">
-          <div className="flex items-center space-x-3 mb-8">
-            <Award className="h-8 w-8 text-blue-600" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Core Values</h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: <Heart className="h-8 w-8" />,
-                title: "Integrity",
-                description: "Upholding honesty and ethical principles in all endeavors",
-              },
-              {
-                icon: <Shield className="h-8 w-8" />,
-                title: "Respect",
-                description: "Valuing diversity and treating everyone with dignity",
-              },
-              {
-                icon: <Target className="h-8 w-8" />,
-                title: "Excellence",
-                description: "Pursuing the highest standards in teaching and learning",
-              },
-              {
-                icon: <Users className="h-8 w-8" />,
-                title: "Collaboration",
-                description: "Working together to achieve common educational goals",
-              },
-            ].map((value, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 text-center"
-              >
-                <div className="text-blue-600 mb-4 flex justify-center">{value.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
-                <p className="text-gray-600 text-sm">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Objectives Section */}
       <section id="objectives" className="py-16 bg-gray-50 scroll-mt-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-[1920px]">
@@ -168,10 +121,6 @@ const VisionPage: React.FC = () => {
                 "To develop pedagogical skills and knowledge necessary for effective teaching in diverse classroom settings",
                 "To foster critical thinking, creativity, and problem-solving abilities among students",
                 "To inculcate values of social responsibility, empathy, and ethical conduct",
-                "To promote research and innovation in the field of education",
-                "To establish partnerships with schools and educational institutions for practical training",
-                "To create an inclusive learning environment that respects diversity and promotes equity",
-                "To continuously improve curriculum and teaching methodologies based on feedback and best practices",
               ].map((objective, index) => (
                 <div
                   key={index}
@@ -183,6 +132,127 @@ const VisionPage: React.FC = () => {
                   <p className="text-gray-700 leading-relaxed">{objective}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mandatory Disclosure Section */}
+      <section id="mandatory-disclosure" className="py-16 bg-white scroll-mt-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-[1920px]">
+          <div className="flex items-center space-x-3 mb-8">
+            <Target className="h-8 w-8 text-blue-600" />
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Mandatory Disclosure</h2>
+            <span className="text-sm text-gray-500">Updated as on 18/12/2025</span>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">College Code</h3>
+                    <p className="text-gray-700">UP260019</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Date & Period of last approval</h3>
+                    <p className="text-gray-700">2018</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Name of the Institution</h3>
+                    <p className="text-gray-700">Daksh Vidyapeeth</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Address of the Institution</h3>
+                    <p className="text-gray-700">Gehna Govardhan, Jahangirabad, Anupshahar, Bulandshahr, Uttar Pradesh, India</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">City & Pin Code</h3>
+                    <p className="text-gray-700">Buldanshahr — 203394</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">State</h3>
+                    <p className="text-gray-700">Uttar Pradesh</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Office hours at the institution</h3>
+                    <p className="text-gray-700">09:30AM to 5.30 PM</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Academic hours at the institution</h3>
+                    <p className="text-gray-700">09:30 AM to 5:30 PM</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Email</h3>
+                    <p className="text-gray-700">ch.pk88@gmail.com, dakshvidyapeeth@gmail.com</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Website</h3>
+                    <p className="text-gray-700">https://www.dakshcampus.in/daksh-mahilla-vidyapeeth</p>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Nearest Railway Station (distance in km)</h3>
+                    <p className="text-gray-700">Jahangirabad Raj (2 km)</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Nearest Airport (distance in km)</h3>
+                    <p className="text-gray-700">IGI Airport, New Delhi (87 km)</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Type of Institution</h3>
+                    <p className="text-gray-700">Self Finance</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Courses</h3>
+                    <p className="text-gray-700">D.El.Ed (Diploma in Elementary Education)</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Category (2) of the institution</h3>
+                    <p className="text-gray-700">Co-ed</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Name of the organization running the Institution</h3>
+                    <p className="text-gray-700">Mahendra Singh Educational & Social Welfare Trust</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Type of the organization</h3>
+                    <p className="text-gray-700">Trust</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Address of the organization</h3>
+                    <p className="text-gray-700">D-95 Shardhapuri Phase-II, Kankerkhera, Meerut (U.P.)</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Register with</h3>
+                    <p className="text-gray-700">Office of the Dy. Registrar of Societies Meerut (U.P.).</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Registered Year</h3>
+                    <p className="text-gray-700">2015</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Name of the Affiliating University</h3>
+                    <p className="text-gray-700">National Council for Teacher Education, New Delhi</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Accreditation Status with NBA</h3>
+                    <p className="text-gray-700">Not applied for accreditation</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Address</h3>
+                    <p className="text-gray-700">G-7, Sector-10, Dwarka, New Delhi – 110075</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Website</h3>
+                    <p className="text-gray-700">https://ncte.gov.in/</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Latest affiliating period</h3>
+                    <p className="text-gray-700">2020-21</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import {
   Menu,
   X,
@@ -65,11 +66,6 @@ const Header: React.FC = () => {
           label: "About Trust",
           href: "/about#about-trust",
           icon: <Building className="h-4 w-4" />,
-        },
-        {
-          label: "History",
-          href: "/about#history",
-          icon: <BookOpen className="h-4 w-4" />,
         },
         {
           label: "Leadership",
@@ -164,32 +160,6 @@ const Header: React.FC = () => {
       ],
     },
     {
-      label: "Placements",
-      href: "/placements",
-      dropdown: [
-        {
-          label: "Placement Statistics",
-          href: "/placements#placement-stats",
-          icon: <Award className="h-4 w-4" />,
-        },
-        {
-          label: "Recruiting Partners",
-          href: "/placements#recruiters",
-          icon: <Building className="h-4 w-4" />,
-        },
-        {
-          label: "Alumni Success",
-          href: "/placements#alumni",
-          icon: <Users className="h-4 w-4" />,
-        },
-        {
-          label: "Career Guidance",
-          href: "/placements#career-guidance",
-          icon: <Target className="h-4 w-4" />,
-        },
-      ],
-    },
-    {
       label: "News",
       href: "/news",
       dropdown: [
@@ -216,6 +186,12 @@ const Header: React.FC = () => {
       ],
     },
     {
+      label: "Placements",
+      href: "#",
+      dropdown: null,
+      disabled: true,
+    },
+    {
       label: "Contact",
       href: "/contact",
       dropdown: [
@@ -232,11 +208,6 @@ const Header: React.FC = () => {
         {
           label: "Quick Enquiry",
           href: "/contact#enquiry",
-          icon: <MessageSquare className="h-4 w-4" />,
-        },
-        {
-          label: "Feedback",
-          href: "/contact#feedback",
           icon: <MessageSquare className="h-4 w-4" />,
         },
       ],
@@ -264,7 +235,7 @@ const Header: React.FC = () => {
                 </span>
                 <span className="hidden md:flex items-center space-x-2">
                   <MessageSquare className="h-3 w-3" />
-                  <span>dakshvidyapeeth@gmail.com</span>
+                  <span>dmv.edu@gmail.com</span>
                 </span>
               </div>
               <div className="flex items-center space-x-3 sm:space-x-4 text-[10px] sm:text-xs">
@@ -304,8 +275,14 @@ const Header: React.FC = () => {
               >
                 <div className="relative">
                   <div className="absolute inset-0 bg-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition-opacity"></div>
-                  <div className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 p-2 sm:p-3 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300">
-                    <GraduationCap className="h-7 w-7 sm:h-9 sm:w-9 text-white" />
+                  <div className="relative bg-white p-1 sm:p-1.5 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300">
+                    <Image 
+                      src="/logo.jpg" 
+                      alt="Daksh Mahila Vidyapeeth Logo" 
+                      width={40} 
+                      height={40} 
+                      className="h-7 w-7 sm:h-9 sm:w-9 object-contain rounded-xl"
+                    />
                   </div>
                 </div>
                 <div className="min-w-0">
@@ -332,7 +309,12 @@ const Header: React.FC = () => {
                     >
                       <a
                         href={item.href}
-                        className="flex items-center space-x-1 text-gray-700 hover:text-blue-700 font-semibold transition-all duration-200 px-3 py-2 rounded-lg hover:bg-blue-50 relative group text-sm whitespace-nowrap"
+                        onClick={(e) => item.disabled && e.preventDefault()}
+                        className={`flex items-center space-x-1 font-semibold transition-all duration-200 px-3 py-2 rounded-lg relative group text-sm whitespace-nowrap ${
+                          item.disabled
+                            ? "text-gray-400 cursor-not-allowed hover:text-gray-400 hover:bg-transparent"
+                            : "text-gray-700 hover:text-blue-700 hover:bg-blue-50"
+                        }`}
                       >
                         <span>{item.label}</span>
                         {item.dropdown && (
@@ -424,8 +406,18 @@ const Header: React.FC = () => {
                 <div key={index}>
                   <a
                     href={item.href}
-                    className="flex items-center justify-between text-gray-800 hover:text-blue-700 font-semibold py-4 px-5 rounded-xl hover:bg-blue-50 transition-all duration-200 border border-transparent hover:border-blue-100"
-                    onClick={() => !item.dropdown && setIsMenuOpen(false)}
+                    onClick={(e) => {
+                      if (item.disabled) {
+                        e.preventDefault();
+                      } else if (!item.dropdown) {
+                        setIsMenuOpen(false);
+                      }
+                    }}
+                    className={`flex items-center justify-between font-semibold py-4 px-5 rounded-xl transition-all duration-200 border ${
+                      item.disabled
+                        ? "text-gray-400 cursor-not-allowed hover:text-gray-400 hover:bg-transparent border-transparent"
+                        : "text-gray-800 hover:text-blue-700 hover:bg-blue-50 border-transparent hover:border-blue-100"
+                    }`}
                   >
                     <span>{item.label}</span>
                     {item.dropdown && <ChevronDown className="h-5 w-5" />}

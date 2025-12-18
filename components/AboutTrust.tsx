@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Award, Users, BookOpen, Target, Heart, Lightbulb, GraduationCap, Shield, Sparkles, TrendingUp } from "lucide-react";
+import NewsAnnouncements from "./NewsAnnouncements";
 
 const AboutUs: React.FC = () => {
   return (
@@ -37,44 +38,52 @@ const AboutUs: React.FC = () => {
       {/* Main About Content */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-4">
-              <div className="inline-flex items-center space-x-2 bg-sky-50 text-sky-700 px-3 py-1.5 rounded-md text-xs font-semibold">
-                <Sparkles className="w-3 h-3" />
-                <span>Established 2015</span>
+          <div className="grid lg:grid-cols-3 gap-12 items-start">
+            <div className="lg:col-span-2 space-y-6">
+              <div className="space-y-4">
+                <div className="inline-flex items-center space-x-2 bg-sky-50 text-sky-700 px-3 py-1.5 rounded-md text-xs font-semibold">
+                  <Sparkles className="w-3 h-3" />
+                  <span>Established 2015</span>
+                </div>
+                <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
+                  Building a Legacy of Educational Excellence
+                </h2>
+                <div className="w-16 h-1 bg-sky-600 rounded"></div>
+                <div className="space-y-3">
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    Since its inception in 2015, <span className="font-semibold text-gray-900">Daksh Mahila Vidyapeeth</span> has been committed to shaping future educators with knowledge, values, and purpose. Approved by Chaudhary Charan Singh University, Meerut, our B.A. and B.Com programs are designed not only to prepare teachers, but also to inspire torchbearers of learning who will guide future generations.
+                  </p>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    We believe that education is a transformative journey—where students gain confidence, develop skills, and adopt values that enable them to contribute meaningfully to society. At Daksh Mahila Vidyapeeth, we strive to create a nurturing, disciplined, and inspiring environment where every student realizes their potential and steps forward as a responsible, compassionate, and confident educator.
+                  </p>
+                </div>
               </div>
-              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
-                Building a Legacy of Educational Excellence
-              </h2>
-              <div className="w-16 h-1 bg-sky-600 rounded"></div>
-              <div className="space-y-3">
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  Since its inception in 2015, <span className="font-semibold text-gray-900">Daksh Mahila Vidyapeeth</span> has been committed to shaping future educators with knowledge, values, and purpose. Approved by Chaudhary Charan Singh University, Meerut, our B.A. and B.Com programs are designed not only to prepare teachers, but also to inspire torchbearers of learning who will guide future generations.
-                </p>
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  We believe that education is a transformative journey—where students gain confidence, develop skills, and adopt values that enable them to contribute meaningfully to society. At Daksh Mahila Vidyapeeth, we strive to create a nurturing, disciplined, and inspiring environment where every student realizes their potential and steps forward as a responsible, compassionate, and confident educator.
-                </p>
+
+              <div className="grid grid-cols-2 gap-4 mt-8">
+                {[
+                  { icon: Award, label: "CCS", value: "University" },
+                  { icon: GraduationCap, label: "280", value: "B.A. Seats" },
+                  { icon: Users, label: "120", value: "B.Com Seats" },
+                  { icon: BookOpen, label: "2015", value: "Established" }
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100"
+                  >
+                    <div className="bg-sky-50 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
+                      <item.icon className="w-5 h-5 text-sky-600" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-0.5">{item.label}</h3>
+                    <p className="text-xs text-gray-600 font-medium">{item.value}</p>
+                  </div>
+                ))}
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { icon: Award, label: "CCS", value: "University" },
-                { icon: GraduationCap, label: "280", value: "B.A. Seats" },
-                { icon: Users, label: "120", value: "B.Com Seats" },
-                { icon: BookOpen, label: "2015", value: "Established" }
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100"
-                >
-                  <div className="bg-sky-50 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
-                    <item.icon className="w-5 h-5 text-sky-600" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-0.5">{item.label}</h3>
-                  <p className="text-xs text-gray-600 font-medium">{item.value}</p>
-                </div>
-              ))}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24">
+                <NewsAnnouncements />
+              </div>
             </div>
           </div>
         </div>

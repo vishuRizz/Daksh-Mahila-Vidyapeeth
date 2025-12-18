@@ -3,6 +3,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import React from "react";
+import Image from "next/image";
 import {
   School,
   BookOpen,
@@ -65,8 +66,14 @@ const InfrastructurePage: React.FC = () => {
               </div>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-8 shadow-lg">
-              <div className="aspect-video bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
-                <School className="h-24 w-24 text-white opacity-50" />
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <Image 
+                  src="/a-classroom.jpg" 
+                  alt="Classroom" 
+                  width={800} 
+                  height={450} 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -82,8 +89,14 @@ const InfrastructurePage: React.FC = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-8 shadow-lg order-2 md:order-1">
-              <div className="aspect-video bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
-                <BookOpen className="h-24 w-24 text-white opacity-50" />
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <Image 
+                  src="/c-library.jpg" 
+                  alt="Library" 
+                  width={800} 
+                  height={450} 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="order-1 md:order-2">
@@ -179,8 +192,14 @@ const InfrastructurePage: React.FC = () => {
               </div>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-8 shadow-lg">
-              <div className="aspect-video bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
-                <Trophy className="h-24 w-24 text-white opacity-50" />
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <Image 
+                  src="/b-sports.jpg" 
+                  alt="Sports Facilities" 
+                  width={800} 
+                  height={450} 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
