@@ -11,7 +11,8 @@ import {
   Twitter, 
   Instagram, 
   Youtube,
-  ArrowRight
+  ArrowRight,
+  Download
 } from 'lucide-react'
 
 const Footer: React.FC = () => {
@@ -22,6 +23,15 @@ const Footer: React.FC = () => {
     'Faculty',
     'Infrastructure',
     'Placements'
+  ]
+
+  const pdfDownloads = [
+    { label: "DELED 2024", filename: "DELED 2024 94.pdf" },
+    { label: "DELED 2023", filename: "DELED 2023 78.pdf" },
+    { label: "DELED 2022", filename: "DELED 2022 18.pdf" },
+    { label: "DELED 2021", filename: "DELED 2021 17.pdf" },
+    { label: "DELED 2019", filename: "DELED 2019 100.pdf" },
+    { label: "DELED 2018", filename: "DELED 2018 73.pdf" },
   ]
 
   const programs = [
@@ -58,7 +68,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* College Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
@@ -139,6 +149,25 @@ const Footer: React.FC = () => {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Downloads */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-6">Downloads</h4>
+            <ul className="space-y-3">
+              {pdfDownloads.map((pdf, index) => (
+                <li key={index}>
+                  <a
+                    href={`/${pdf.filename}`}
+                    download
+                    className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center space-x-2 group"
+                  >
+                    <Download className="h-4 w-4 opacity-70 group-hover:opacity-100 transition-opacity duration-300" />
+                    <span className="text-sm">{pdf.label}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
